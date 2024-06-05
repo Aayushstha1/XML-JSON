@@ -1,0 +1,32 @@
+<bcathirdsem>
+    <student>
+         <sn>1</sn>
+        <name>Aayush stha</name>
+        <phone_no>111111111</phone_no>
+        <address>itahari</address>
+    </student>
+    <student>
+        <sn>2</sn>
+        <name>Hari Rai</name>
+        <phone_no>987654321</phone_no>
+        <address>Ktm</address>
+    </student>
+    <student>
+        <sn>3</sn>
+        <name>sam Lal</name>
+        <phone_no>987651212</phone_no>
+        <address>Jhapa</address>
+    </student>
+    <student>
+        <sn>4</sn>
+        <name>sita Rai</name>
+        <phone_no>987654321</phone_no>
+        <address>Ktm</address>
+    </student>
+    <student>
+        <sn>5</sn>
+        <name>gita Rai</name>
+        <phone_no>987654321</phone_no>
+        <address>Ktm</address>
+    </student>
+</bcathirdsem>
