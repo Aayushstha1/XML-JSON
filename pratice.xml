@@ -1,0 +1,23 @@
+<Employee>
+    <Employee-info>
+        <name>
+            <F_name>Aayush</F_name>
+            <M_name></M_name>
+            <L_name>stha</L_name>
+        </name>
+        <contact-info>
+            <company-Info>
+                <Company-name>ABC</Company-name>
+                <location>
+                    <street>Biratnagar line</street>
+                    <city>Itahari</city>
+                    <phone-no>9890002033</phone-no>
+                </location>
+                <Designation>ABC</Designation>
+                 </company-Info>
+            <Phone-no>982300982</Phone-no>
+            <email>aayush@gmail.com</email>
+        </contact-info>
+
+    </Employee-info>
+</Employee>

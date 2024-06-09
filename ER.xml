@@ -1,0 +1,13 @@
+<college>
+    <student>
+        <first-name>Aayush </first-name>
+        <last-name>Stha</last-name>
+        <contact >9824099712</contact>
+        <email>aayush002@gmail.com</email>
+        <address>
+            <city>Damak</city>
+            <state>1</state>
+            <pin>005</pin>
+        </address>
+    </student>
+</college>

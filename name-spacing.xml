@@ -1,0 +1,19 @@
+<root xmlns:a="http://www.aayush.com"
+xmlns:b="http://www.abc.com">
+
+
+
+<a:table>
+    <a:tr>
+        <a:td>Apple</a:td>
+        <a:td>Banana</a:td>
+        <a:td>Apple</a:td>
+    </a:tr>
+    </a:table>
+    <b:table>
+        <b:name> Coffee Table</b:name>
+        <b:width>80</b:width>
+        <b:length>120</b:length>
+</b:table>
+      
+      </root>

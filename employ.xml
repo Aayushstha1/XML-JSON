@@ -1,0 +1,37 @@
+<TU>
+    <Employee>
+        <Post>Manager</Post>
+        <Salary> Rs.50000</Salary>
+        <Gender>Male</Gender>
+        <Username>Harry</Username>
+        <Password>password123</Password>
+    </Employee>
+    <Employee>
+        <Post>Developer</Post>
+        <Salary>Rs.40000</Salary>
+        <Gender>Female</Gender>
+        <Username>Tom</Username>
+        <Password>password456</Password>
+    </Employee>
+    <Employee>
+        <Post>Developer</Post>
+        <Salary>Rs. 40000</Salary>
+        <Gender>Female</Gender>
+        <Username>Jems</Username>
+        <Password>password456</Password>
+    </Employee>
+    <Employee>
+        <Post>Developer</Post>
+        <Salary>Rs.40000</Salary>
+        <Gender>Female</Gender>
+        <Username>Niki</Username>
+        <Password>password456</Password>
+    </Employee>
+    <Employee>
+        <Post>Developer</Post>
+        <Salary>Rs. 40000</Salary>
+        <Gender>Female</Gender>
+        <Username>peter</Username>
+        <Password>password456</Password>
+    </Employee>
+</TU>
