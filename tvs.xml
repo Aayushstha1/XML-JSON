@@ -1,0 +1,78 @@
+<!DOCTYPE TVSCHEDULE [
+    <!ELEMENT TVSCHEDULE (channel+)>
+    <!ATTLIST TVSCHEDULE
+        Name CDATA #REQUIRED>
+
+    <!ELEMENT channel (banner, day+)>
+    <!ATTLIST channel
+        Chan CDATA #REQUIRED>
+
+    <!ELEMENT banner (#PCDATA)>
+
+    <!ELEMENT day (date, (holiday | programslot)+)>
+
+    <!ELEMENT date (#PCDATA)>
+
+    <!ELEMENT holiday (#PCDATA)>
+
+    <!ELEMENT programslot (Time, Title, Description?)>
+    <!ATTLIST programslot
+        Vtr CDATA #IMPLIED>
+
+    <!ELEMENT Time (#PCDATA)>
+
+    <!ELEMENT Title (#PCDATA)>
+    <!ATTLIST Title
+        Rating CDATA #IMPLIED
+        Language CDATA #IMPLIED>
+
+    <!ELEMENT Description (#PCDATA)>
+]>
+<TVSCHEDULE Name="Daily Schedule">
+    <channel Chan="ABC">
+        <banner>ABC Channel Banner</banner>
+        <day>
+            <date>2024-06-20</date>
+            <holiday>Public Holiday</holiday>
+            <programslot Vtr="1234">
+                <Time>08:00</Time>
+                <Title >Morning Show</Title>
+                <Description>A great start to the day with news and entertainment.</Description>
+            </programslot>
+            <programslot>
+                <Time>10:00</Time>
+                <Title>Cartoon Time</Title>
+            </programslot>
+        </day>
+        <day>
+            <date>2024-06-21</date>
+            <programslot>
+                <Time>09:00</Time>
+                <Title Rating="G">Kids Hour</Title>
+            </programslot>
+            <holiday>Another Holiday</holiday>
+        </day>
+    </channel>
+    <channel Chan="NBC">
+        <banner>NBC Channel Banner</banner>
+        <day>
+            <date>2024-06-20</date>
+            <programslot Vtr="5678">
+                <Time>07:00</Time>
+                <Title >Morning News</Title>
+                <Description>Daily news and weather updates.</Description>
+            </programslot>
+            <programslot>
+                <Time>09:00</Time>
+                <Title>Cooking Show</Title>
+            </programslot>
+        </day>
+        <day>
+            <date>2024-06-21</date>
+            <programslot>
+                <Time>10:00</Time>
+                <Title >Documentary</Title>
+            </programslot>
+        </day>
+    </channel>
+</TVSCHEDULE>

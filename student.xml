@@ -1,0 +1,15 @@
+<!DOCTYPE students SYSTEM "syudents.dtd">
+
+<student>
+    <name>Aayush </name>
+    <address type="pernament">damak, jhapa</address>
+    <phone>9824099712</phone>
+    <website>http://www. w3school.com</website>
+
+</student>
+<student>
+    <name>RAM </name>
+   
+    <phone>9824000000</phone>
+
+</student>

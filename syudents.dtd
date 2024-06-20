@@ -1,0 +1,13 @@
+
+
+<!ELEMENT students (student+)>
+<!ELEMENT student (name, address+, phone, website)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT address (#PCDATA)>
+<!ATTLIST address
+    type (permanent | temporary) #REQUIRED>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT website (#PCDATA)>
+
+<!ENTITY % phone "([0-9]{10})">
+<!ELEMENT phone (#PCDATA)>
