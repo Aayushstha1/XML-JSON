@@ -1,0 +1,76 @@
+<!DOCTYPE shop [
+    <!ELEMENT shop (product+, customer+, order+, review*)>
+    <!ATTLIST shop
+        name CDATA #REQUIRED
+        location CDATA #IMPLIED>
+
+    <!ELEMENT product (name, category, price, stock?)>
+    <!ATTLIST product
+        id ID #REQUIRED>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT stock (#PCDATA)>
+
+    <!ELEMENT customer (name, email)>
+    <!ATTLIST customer
+        id ID #REQUIRED>
+
+    <!ELEMENT email (#PCDATA)>
+
+    <!ELEMENT order (productId+, date)>
+    <!ATTLIST order
+        id ID #REQUIRED
+        customerId IDREF #REQUIRED>
+
+    <!ELEMENT productId (#PCDATA)>
+    <!ELEMENT date (#PCDATA)>
+
+    <!ELEMENT review (rating, comment?)>
+    <!ATTLIST review
+        id ID #REQUIRED
+        productId IDREF #REQUIRED
+        customerId IDREF #REQUIRED>
+
+    <!ELEMENT rating (#PCDATA)>
+    <!ELEMENT comment (#PCDATA)>
+]>
+
+<shop>
+    <product>
+        <name>Smartphone</name>
+        <category>Electronics</category>
+        <price>4999</price>
+        <stock>15</stock>
+    </product>
+    <product >
+        <name>Laptop</name>
+        <category>Electronics</category>
+        <price>999999</price>
+    </product>
+    <customer>
+        <name>Aayush</name>
+        <email>aayush@email.com</email>
+    </customer>
+    <customer>
+        <name>Ram sharma</name>
+        <email>ram123@gmail.com</email>
+    </customer>
+    <order>
+        <productId>001</productId>
+        <date>2024-06-21</date>
+    </order>
+    <order>
+        <productId>002</productId>
+        <date>2024-06-20</date>
+    </order>
+    <review>
+        <rating>5</rating>
+        <comment>Great product!</comment>
+    </review>
+    <review>
+        <rating>4</rating>
+        <comment>Very good, but could be cheaper.</comment>
+    </review>
+</shop>

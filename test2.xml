@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE shop [
+    <!ELEMENT shop (product+, customer+, order+)>
+    <!ATTLIST shop
+        name CDATA #REQUIRED
+        url CDATA #REQUIRED>
+
+    <!ELEMENT product (name, category, price, stock)>
+    <!ATTLIST product
+        id ID #REQUIRED>
+
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT category (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT stock (#PCDATA)>
+
+    <!ELEMENT customer (name, email, phone)>
+    <!ATTLIST customer
+        id ID #REQUIRED>
+
+    <!ELEMENT email (#PCDATA)>
+    <!ELEMENT phone (#PCDATA)>
+
+    <!ELEMENT order (customer_id, date, status)>
+    <!ATTLIST order
+        id ID #REQUIRED
+        customer_id IDREF #REQUIRED>
+
+    <!ELEMENT customer_id (#PCDATA)>
+    <!ELEMENT date (#PCDATA)>
+    <!ELEMENT status (#PCDATA)>
+]>
+<shop name="My ABC-Shop" url="http://www.my-ABC-shop.com">
+    <product >
+        <name>Smartphone</name>
+        <category>Electronics</category>
+        <price>699.99</price>
+        <stock>50</stock>
+    </product>
+    <product>
+        <name>Running Shoes</name>
+        <category>Sportswear</category>
+        <price>1200.00</price>
+        <stock>20</stock>
+    </product>
+    <customer>
+        <name>Aayush stha</name>
+        <email>aayush@gmail.com</email>
+        <phone>982400000</phone>
+    </customer>
+    <customer>
+        <name>Jram</name>
+        <email>jane.smith@example.com</email>
+        <phone>098-765-4321</phone>
+    </customer>
+    <order>
+        <customer_id>c1</customer_id>
+        <date>2024-06-21</date>
+        <status>Shipped</status>
+    </order>
+    <order>
+        <customer_id>c2</customer_id>
+        <date>2024-06-20</date>
+        <status>Processing</status>
+    </order>
+</shop>
