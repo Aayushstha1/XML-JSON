@@ -1,0 +1,10 @@
+<!-- student-> root element
+ fname
+ lname
+ phone -->
+ <?xml version="1.0" encoding="UTF-8"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="tute11.xsd">
+    <fname>Aayush</fname>
+    <lname>stha</lname>
+    <phone>9824099712</phone>
+</student>
