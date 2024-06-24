@@ -1,0 +1,23 @@
+xml.
+<?xml version="1.0" encoding="UTF-8"?>
+<student xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="tute11.xsd"
+>
+    <fname>Nishal</fname>
+    <lname>Rai</lname>
+    <phone>984025511</phone>
+</student>
+xsd.
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+<xs:element name="student">
+<xs:complexType>
+<xs:sequence>
+<xs:element name="fname" type="xs:string"/>
+<xs:element name="lname" type="xs:string"/>
+<xs:element name="phone" type="xs:string"/>
+</xs:sequence>
+</xs:complexType>
+<xs:element>
+</xs:schema>
