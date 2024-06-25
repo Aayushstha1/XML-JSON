@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="emplooy.xsl"?>
+<catalog>
+    <employee>
+        <name>Aayush stha</name>
+        <department>Engineering</department>
+        <job-title>Software Engineer</job-title>
+        <salary>70000</salary>
+        <email>aayush@example.com</email>
+    </employee>
+    <employee>
+        <name>Hari lal saha</name>
+        <department>Marketing</department>
+        <job-title>Marketing Manager</job-title>
+        <salary>75000</salary>
+        <email>hari@example.com</email>
+    </employee>
+    <employee>
+        <name>sam lama</name>
+        <department>BCA</department>
+        <job-title>HOD</job-title>
+        <salary>75000</salary>
+        <email>sam@example.com</email>
+    </employee>
+</catalog>
